@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: claudia_production
+  username: claudia
+  password: <%= ENV['CLAUDIA_DATABASE_PASSWORD'] %>
